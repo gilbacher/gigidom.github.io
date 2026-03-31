@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Domotique</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/eclipse-paho-mqtt@1.1.0/paho-mqtt.min.js"></script>
+</head>
+<body>
+  <h1>Dashboard Domotique</h1>
+  <div class="widget">
+    <h2>Température</h2>
+    <p id="temperature">-- °C</p>
+  </div>
+  <div class="widget">
+    <h2>Humidité</h2>
+    <p id="humidity">-- %</p>
+  </div>
+  <div class="widget">
+    <h2>Contrôle LED</h2>
+    <button id="ledOn">Allumer</button>
+    <button id="ledOff">Éteindre</button>
+  </div>
+  <div class="widget">
+    <h2>Image Caméra</h2>
+    <img id="cameraImage" src="" alt="Image de la caméra" style="max-width: 100%;">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
